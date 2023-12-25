@@ -18,8 +18,8 @@ class MyComponents extends React.Component{
     deleteShowHide=(user)=>{
       console.log("user",user)
       let cloneList=this.state.listusers;
-       cloneList= cloneList.filter(item=>console.log("check",item));
-       
+       cloneList= cloneList.filter(item=>item.id !== user.id);
+          
       this.setState({
         listusers: cloneList
       })
