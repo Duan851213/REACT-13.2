@@ -5,16 +5,6 @@ class AddUserInfor extends React.Component {
         age: 22,
         name: 'duan'
     };
-    componentDidMount() {
-        console.log('chajy sau render nhe');
-        setTimeout(() => {
-            document.title = 'le thanh duan'
-        }, 1000);
-    };
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('chajy sau 1 lan nua nh did update');
-    }
 
 
     handleclick(event) {
